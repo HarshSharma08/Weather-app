@@ -1,9 +1,10 @@
 .container{
     display: flex;
-    height: 40rem;
-    margin-left: 40rem;
-    margin-right: 40rem;
-    margin-top: 5rem;
+    height: 30rem;
+    width: 20rem;
+    
+    margin-left: 500px;
+    margin-top: 4rem;
     background-color: indianred;
     border-radius: 25px;
     box-shadow:5px 5px  0em rgba(0, 0, 0, 0.123) ;
@@ -11,7 +12,7 @@
 
 body{
     background-color: lightgray;
-    height: 46.5rem;
+    
 }
 
 .app-title{
@@ -24,8 +25,8 @@ body{
 #op{
     text-align: center;
     font-style: italic;
-    font-size: 45px;
-    padding-left: 12rem;
+    font-size: 30px;
+    padding-left: 7rem;
  }
 
 
@@ -50,8 +51,8 @@ body{
 }
 
 .weather-icon{
-    margin-top: 12rem;
-    margin-left: 25px;
+    margin-top: 7rem;
+    margin-left: 40px;
 
 }
 
@@ -63,64 +64,10 @@ body{
 
 .temperature-value p{
     align-items: center;
-    margin-left: -105px;
-    font-size: 50px;
-    min-height: 100vh;
+    margin-left: -95px;
+    font-size: 40px;
     text-align: center;
     cursor: pointer;
-}
-
-@media only screen and (max-width: 600px) {
-  
-    .container{
-        display: flex;
-        height: 30rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
-        margin-top: 5rem;
-        background-color: indianred;
-        border-radius: 25px;
-        box-shadow:5px 5px  0em rgba(0, 0, 0, 0.123) ;
-    }
-    .weather-container{
- 
-    align-items: center;
-    font-size: 15px;
-    font-style: italic;
-    margin: 50rem ,0rem,40rem,50rem;
-    width: 300px;
-    height: 300px;
-   }
-
-   .weather-icon{
-    margin-top: 6rem;
-    margin-left: 30px;
-}
-   
-#op{
-    text-align: center;
-    font-style: italic;
-    font-size: 30px;
-    padding-left: 4rem;
- }
-
- .temperature-value p{
-    align-items: center;
-    margin-left: -105px;
-    font-size: 30px;
-    min-height: 100vh;
-    text-align: center;
-    cursor: pointer;
-}
-
-.temperature-description p{
-    padding: 0px;
-    margin-top:10px;
-    text-align: center;
-    font-size: 1em;
-    margin-left: 150px;
-}
-
 }
 
 .temperature-value p:hover{
@@ -136,8 +83,8 @@ body{
     padding: 8px;
     margin-top:10px;
     text-align: center;
-    font-size: 1.2em;
-    margin-left: -140px;
+    font-size: 1em;
+    margin-left: -80px;
 }
 
 .location{
@@ -145,7 +92,7 @@ body{
 }
 
 .location p{
-    margin-left: -150px;
+    margin-left: -85px;
     text-align: center;
     font-size: 0.8em;
 }
