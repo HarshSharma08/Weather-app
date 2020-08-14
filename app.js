@@ -4,19 +4,18 @@ const descElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
 
-// App data
+
 const weather = {};
 
 weather.temperature = {
     unit : "celsius"
 }
 
-// APP CONSTS AND VARS
+
 const KELVIN = 273;
-// API KEY
+
 const key = "9083aca26c9bc206798f1d3a72c246ee";
 
-// CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
 }else{
@@ -24,7 +23,6 @@ if('geolocation' in navigator){
     notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
 }
 
-// SET USER'S POSITION
 function setPosition(position){
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
@@ -32,13 +30,11 @@ function setPosition(position){
     getWeather(latitude, longitude);
 }
 
-// SHOW ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
 function showError(error){
     notificationElement.style.display = "block";
     notificationElement.innerHTML = `<p> ${error.message} </p>`;
 }
 
-// GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
     
